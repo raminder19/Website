@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<head>
+  <title> Raminders Website </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+      background-color: lightgrey;
+      padding: 0px;
+      margin: 1;
+    }
+    h1 {
+      font-size: 25pt;
+      color: black;
+      text-align: center;
+      padding: 15px 0 15px 0;
+      margin: 0 0 10px 0;
+    }
+    h1 span {
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    .img-circle {
+      border: 3px white;
+      border-radius: 50%;
+    }
+    .section {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    #header {
+      background-image: url(https://www.gencm.com/gencm/assets/images/bar--skyline-bg.jpg/Uploads/header.jpg);
+      background-size: cover;
+    }
+    #header img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin: auto;
+    }
+    #header p {
+      font-size: 25pt;
+      color: #3b464c;
+      padding-top: 5px;
+      margin: 0;
+      font-weight: bold;
+      text-align: center;
+    }
+    .quote {
+      font-size: 12pt;
+      text-align: right;
+      margin-top: 10px;
+    }
+    table {
+      width: 100%;
+    }
+    table, th, td {
+      border: 2px solid #cecece;
+      border-collapse: collapse;
+      text-align: center;
+      table-layout: fixed;
+    }
+    .selected {
+      background-color: #f36f48;
+      font-weight: bold;
+      color: white;
+    }
+    li {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    progress {
+      width: 70%;
+      height: 20px;
+      color: #3fb6b2;
+      background: #efefef;
+    }
+    progress::-webkit-progress-bar {
+      background: #efefef;
+    }
+    progress::-webkit-progress-value {
+      background: #3fb6b2;
+    }
+    progress::-moz-progress-bar {
+      color: #3fb6b2;
+      background: #efefef;
+    }
+    iframe, audio {
+      display: block;
+      margin: 0 auto;
+      border: 3px solid #efb6b2;
+    }
+    hr {
+      text-align: center;
+      margin-top: 0;
+    }
+    .submit {
+      background-color: #3fb6b2;
+      padding: 12px 45px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      margin: 0;
+      font-weight: bold;
+    }
+    .submit:hover {
+      background-color: #43a09d;
+    }
+    textarea {
+      height: 100px;
+    }
+    input, textarea {
+      margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+    }
+    #contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+    .copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+    }
+    img {
+      padding: 5px;
+      margin: 1px;
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <!--Header start-->
+  <div id="header" class="section">
+    <img alt="" class="img-circle" src="https://t2.genius.com/unsafe/498x0/https%3A%2F%2Fimages.genius.com%2F1b50c118dc7e3b3f3a70e815bdbf05c0.1000x1000x1.png">
+    <p> Raminder Singh</p>
+  </div>
+  <!--Header end-->
+  
+  <!-- About me section start-->
+  <div class="section">
+    <h1><span>About Me</span></h1>
+    <p>
+      Hello. My name is <b>Raminder</b> and this is my first "website" using HTML and CSS. Technnicaly HTML and CSS are Markkup Languages so they are not considered coding languages but they still do the same thing. The reason I want to learn code is because I have always liked computers and I wanted to learn how they work. I might be updating this in the future so watch out for that I guess.
+    </p>
+    <p class="quote">"This is a quote, nothing else"</p>
+  </div>
+  <!-- About me section end-->
+  
+  <!--My Schedule section start-->
+  <div class="section">
+    <h1><span> My Schedule (Filler)</span></h1>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+      </tr>
+      <tr>
+        <td>6:30-7:30</td>
+        <td class="selected">Get ready for school &#128534;</td>
+        <td class="selected">The same because</td>
+        <td></td>
+        <td></td>
+        <td></td>       
+      </tr>
+      <tr>
+        <td>8:00-1:00</td>
+        <td class="selected">School &#128564;</td>
+        <td></td>
+        <td class="selected">I am</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>1:30-6:00</td>
+        <td class="selected">Do any homework or just chillax &#128526;</td>
+        <td></td>
+        <td></td>
+        <td class="selected">A pretty</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>6:00-8:00</td>
+        <td class="selected">Eat Dinner &#127869; / Ball @ Lackner &#127936; / More chillaxation &#128526;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="selected">Boring person</td>
+      </tr>
+      <tr>
+        <td>8:00-10:00</td>
+        <td class="selected">Family Time &#128106;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="selected"> &#128541;</td>
+      </tr>
+    </table>
+  </div>
+  <!-- My Schedule section end-->
+
+  <!-- My skills section start-->
+  <div class="section">
+    <h1><span>My Skills</span></h1>
+    <ul>
+      <li>Eating <br />
+        <progress min="0" max="100" value="75"></progress>
+      </li>
+      <li> C++ <br />
+        <progress min="0" max="100" value="49"></progress>
+      </li>
+      <li> Python <br />
+        <progress min="0" max="100" value="25"></progress>
+      </li>
+    </ul>
+  </div>
+  <!--My Skills sections end-->
+
+  <!-- Media section start-->
+  <div class="section">
+    <h1><span>Media</span></h1>
+    <iframe height="150" width="300" src="https://www.youtube.com/embed/YBS8rJvxnKo" allowfullscreen frameborder="0"></iframe>
+  </div>
+    <!-- Media Section end-->
+
+    <!-- Form section start-->
+  <div class="section">
+    <h1><span>Contact Me</span></h1>
+      
+    <center><span style="font-size: 55pt;" class="img">&#128520</span></center>
+    
+    <form>
+      <input name="name" placeholder="Name" type="text" required /><br/>
+      <input name="email" placeholder="Email" type="email" required /><br/>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <input type="submit" value="SEND" class="submit" />
+    </form>
+  </div>
+    <!-- Form section end -->
+
+    <!-- Contacts section start -->
+    <div class="section" id="contacts">
+      <h1><span>Follow Me</span></h1>
+      <div>
+        <a href="https://twitter.com/DebbyRyan" target="_black">
+        <img alt="Debby Ryan" src="https://memegenerator.net/img/images/12989818/shaq-reading-smirk.jpg"/>
+        </a>
+        <a href="#">
+          <img alt="Facebook" src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/08/facebook-design-5f477452f2a8a-760x400.jpg"/>
+        </a>
+        <a href="#">
+          <img alt="Twitter" src="https://pbs.twimg.com/profile_images/958745980886765568/7HdXxena_400x400.jpg"/>
+        </a>
+      </div>
+      <!-- Contacts section end -->
+    
+    <div class="copyright">
+      &copy; 2020 My Website. Piece of Art.
+    </div>
+
+  </body>
+</html>
